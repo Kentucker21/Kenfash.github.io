@@ -217,7 +217,7 @@ for(let i=0;i<items.length;i++){
 
 backbutton.addEventListener('click',()=>{
     localStorage.clear()
-    window.location.href='index.html#store-section'
+    window.location.href='index.html'
 })
 console.log(localStorage.getItem('sentSku'))
 

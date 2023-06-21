@@ -23,7 +23,7 @@ const firebaseConfig = {
         btn.addEventListener('click',()=>{
             signInWithRedirect(authForKenFash,provider)
             getRedirectResult(authForKenFash).then((result)=>{
-                const credential=GoogleAuthProvider.CredentialFromResult(result)
+                const credential
                 const token=credential.accessToken;
                 const user=result.user
                

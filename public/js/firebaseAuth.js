@@ -24,8 +24,6 @@ const firebaseConfig = {
             signInWithRedirect(authForKenFash,provider)
             getRedirectResult(authForKenFash).then((result)=>{
                 
-                const token=credential.accessToken;
-                const user=result.user
                
     
                 

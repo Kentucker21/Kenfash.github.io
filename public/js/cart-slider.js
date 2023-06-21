@@ -264,7 +264,7 @@ clickedProducts.forEach((el)=>{
     localStorage.setItem('sentSku',productSku)
   //  localStorage.setItem('usersName',Login())
     console.log(productSku);
-    window.location.href='/public/description.html'
+    window.location.href='description.html'
   })
 })
 console.log(localStorage);

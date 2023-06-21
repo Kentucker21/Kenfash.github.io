@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.radio-blue{
+    background: radial-gradient(lightyellow ,skyblue);
+}
+.fifty{
+    background:linear-gradient(#1B83FF 50%,#fff 50%);
+}
+
+.trans{
+    transition:opacity 200ms ease-in-out,transform 200ms ease-in-out ;
+}
+.background-leaf{
+    background-image: url(/public/photos/leaf-background.jpg);
+    
+}
+.secondshadow{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.buttonshadow{
+    box-shadow: #1e61b4 0px 2px 4px 0px, #1e61b4 0px 2px 16px 0px;
+}
+.clip-path{
+    clip-path: circle(60%);
+   
+}
+.scrollbar::-webkit-scrollbar{
+display: none;
+}
+.scrollbar1{
+ -webkit-overflow-scrolling: touch;
+}
+.inactive{
+   
+    opacity: 0;
+    transform: translateY(-40px);
+    pointer-events: none;
+    
+}
+.actives{
+    opacity: 1;
+
+    transform: translateY(0);
+    
+}
+
+.mygrid{
+    grid-template-columns: repeat(6,2fr);
+}
+
+.mshadow{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+    /* box-shadow:  5px 5px #888888; */
+}
+.poppins{
+    font-family: 'Poppins',sans-serif;
+}
+
+@layer {
+    .section-min-height{
+        min-height: calc(100vh - 68px);
+    }
+
+   .cart-list{
+    @apply w-[100%] shadow-2xl p-9 
+   }
+
+   
+}
+
+@layer base{
+    html{
+        scroll-behavior: smooth;
+       user-select: none;
+    }
+}
+

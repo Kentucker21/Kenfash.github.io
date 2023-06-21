@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>description</title>
+</head>
+<body class="w-[100%] min-h-screen background-leaf ">
+   
+    <main class="w-[60%] mx-auto  p-11 rounded-xl  bg-[#1B83FF] flex flex-col items-start justify-center mt-[3em] min-w-[800px] medium:items-center medium:min-w-full medium:mt-[1em] small:p-0">
+        <button href="" class="text-[#1B83FF] mt-[1em] backButton font-bold text-lg bg-white rounded-md p-1 ml-1 medium:self-start mb-2">	&#8592;Back</button>
+      <div class="container flex gap-3 items-center  bg-[#1B83FF] mt-[em] medium:flex-col">
+        
+        <div class="image w-[40%] pl-1 medium:w-[100%] medium:max-w-md">
+            <img src="./photos/posing-bg-w-background.jpg" alt="" class="descr-image rounded-md">
+        </div>
+       
+        <div class="description-wrapper self-start  p-5 text-[#1B83FF] rounded-md w-[50%] bg-[#fff] medium:w-[100%] medium:p-2 ">
+         <h1 class="text-4xl">Description</h1>
+         <p class='productName text-xl'>item name:</p>
+         <p class="priceTag text-xl">Price:</p>
+         <p class="text-lg productId">item id:</p>
+         <p class="description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque totam 
+            magnam harum, quod autem maiores beatae sequi dolores. Maxime, voluptas?
+            magnam harum, quod autem maiores beatae sequi dolores. Maxime, voluptas?
+        </p>
+        </div>
+    </div>
+
+    <section class="comments bg-[#f2f5f5] w-[100%] mt-5 p-2">
+        <form action="" class="" id="comFormId">
+            <label class="text-xl text-[#1b83ff] " for="commentInput">Leave a comment review</label> <br>
+            <input type="text" class="w-[40%] border-[#1b83ff] border mt-3 p-3 rounded-md sub-med:w-[100%]" id="commentInputId" placeholder="comment" data-skuInput="nil"><br>
+            <button class="bg-[#1b83ff] text-[#f2f5f5]  mt-3 p-2 rounded-md" id="CommentBtnId">Add Comment</button>
+        </form>
+        
+        <h1 class="text-3xl text-[#1b83ff] mt-3">Comments</h1>
+        <ul class="commentsList list-none mt-2" id="commentsListId">
+            <li class="Acomment mshadow w-[50%] p-3 rounded-lg sub-med:w-[100%] border border-[#1b83ff]">
+                <div class="InfoUser flex gap-1 w-[100%] border justify-between items-center">
+                    <div class="Username italic bg-[#1b83ff] w-max text-white rounded-md p-1 justify-start" id="UsernameId">Kentrell</div>
+                    <div class="uploadDate" id="uploadDateId">12/5/22</div>
+                    <i class="fa-solid fa-trash " id="delCom"></i>
+                </div>
+                
+                <div class="commentContent " id="commentContentId">I really like this product</div>
+            </li>
+        </ul>
+
+    </section>
+    
+    </main>
+</body>
+<!-- <script src="../public/js/cart-slider.js" type="module" defer></script> -->
+<script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js'
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js'
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js'
+//     const firebaseConfig = {
+//         apiKey: "AIzaSyDeOPO0Y72KvYNRS0XZCtXve2fniVl1XJo",
+//   authDomain: "kenbase-af832.firebaseapp.com",
+//   projectId: "kenbase-af832",
+//   storageBucket: "kenbase-af832.appspot.com",
+//   messagingSenderId: "43819512530",
+//   appId: "1:43819512530:web:c64df16b30cc88591d330b",
+//   measurementId: "G-888VE2YMQR"
+    //  };
+    //  const app = initializeApp(firebaseConfig);
+     
+   </script>
+<script src="../public/js/item-descr.js" type="module"></script>
+</html>

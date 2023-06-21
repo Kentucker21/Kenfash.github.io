@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden w-[100%] scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&family=Montserrat&family=Oswald:wght@400;500;700&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>slide cart</title>
+</head>
+<body class="relative overflow-x-hidden w-[100%]  sub-med:bg-white" id="main-page">
+    <main class="poppins" >
+      <header class="w-[100%] bg-[#1b83ff] p-4 fixed top-0 z-30">
+        <nav class=" mx-auto flex justify-between  w-[70%] medium:w-[100%] ">
+
+          <div class="w-1/5  flex items-center gap-2">
+              <a href='#hero' class="flex gap-2">
+                  <img src="../Photos/arrowhead.png" alt="" class="w-8 rounded-xl">
+              <span class="text-white text-2xl whitespace-nowrap font-bold">KenFash</span>
+              </a>
+              
+          </div>
+          <ul class="hidden md:flex gap-6  items-center lg:ml-40 ">
+              
+              <li class="text-white text-xl font-semibold">
+                  <a href="./slide-cart.html" class="hover:opacity-70">Home</a>
+               </li>
+              
+                  <li class="text-white text-xl font-semibold">
+                  <a href="#store-section" class="hover:opacity-70">Store</a> 
+                  </li>
+              
+                  <li class="text-white text-xl font-semibold">
+                  <a href="#About-us" class="hover:opacity-70">About</a> 
+                  </li>
+                  <li class="text-white text-xl font-semibold">
+                  <a href="#Contact-us" class="hover:opacity-70">Contact</a> 
+                  </li>
+
+                  <li class="text-[#1b83ff] bg-[#f5f5f5] text-xl font-semibold px-[0.75em] py-[0.25em] rounded-lg loginBtn" id="loginId">
+                  <a href="#Contact" class="hover:opacity-70">Login</a> 
+                  </li>
+                  <li class="text-[#1b83ff] bg-[#f5f5f5] text-xl font-semibold px-[0.75em] py-[0.25em] rounded-lg hidden" id="signOutId">
+                  <a href="#Contact" class="hover:opacity-70">Sign Out</a> 
+                  </li>
+          </ul>
+  
+          <div class='absolute right-4 top-[17px]'>
+              <button id="hamburger-button" class="text-3xl text-white md:hidden lg:hidden focus:outline-none cursor-pointer">&#9776;</button>
+          </div>
+      </nav>
+      
+        <section id="mobile-menu" class="absolute top-0 left-[-0.6em] md:left-[0.3em] md:w-[100vw] bg-[#1b83ff] w-[108vw] text-5xl  flex-col
+        justify-center origin-top animate-open-menu hidden">
+          <button class="text-8xl self-end px-6 text-white">
+              &times;
+          </button>
+          <nav class="flex flex-col min-h-screen items items-center py-8 text-white" aria-label="mobile">
+              <a href="./slide-cart.html" class="w-full text-center py-6 hover:opacity-90">
+                  Home
+              </a>
+              <a href="#store-section" class="w-full text-center text-white py-6 hover:opacity-90">
+              Store
+              </a>
+              <a href="#About-us" class="w-full text-center py-6 hover:opacity-90">
+                  About us
+              </a>
+              <a href="#Contact-us" class="w-full text-center py-6 hover:opacity-90">
+                  Contact
+              </a>
+              <a href="" class="w-full  py-6 hover:opacity-90 loginBtn text-center">
+                 Login
+              </a>
+              <a href="" class="w-full  py-6 hover:opacity-90  text-center" id="signOutId">
+                 Logout
+              </a>
+          </nav>
+      </header>
+     
+
+        <section id="hero"  class=" min-h-screen  border-cyan-800 w-[100%] mx-auto relative fifty flex justify-between mt-4 medium:w-[100%] sub-med:flex-col">
+           <div class="subsection mx-auto relative w-[90%]  flex justify-between mt-4 medium:w-[100%] sub-med:flex-col" >
+            <div class="hero-text  mt-[10em] big:mt-[9em]  w-[50%] medium:w-[60%] sub-med:self-center sub-med:w-[100%] sub-med:mt-[7em]">
+              <h1 class="text-7xl text-[#fff] text-center big:text-5xl medium:text-4xl">KEN FASHION</h1>
+              <h2 class="text-3xl text-[#fff] italic mb-7 text-center medium:text-2xl">One stop shop for all your fashion needs</h2>
+              <div class="buttons text-center  whitespace-nowrap small:whitespace-normal sub-med:mb-5">
+                <button class="bg-none text-[#fff] buttonshadow text-xl pr-[1.95em] font-semibold  pl-[1.95em] pt-[0.25em] pb-[0.25em] border-pink-500 border-[2px] big:text-lg small:mb-[1em] mr-2 " ><a href="#store-section"> Explore &#8594;</a></button>
+              <button class="bg-none  text-[#1b83ff] buttonshadow font-semibold bg-[#fff]  text-xl pr-[1.95em] pl-[1.95em] pt-[0.25em] pb-[0.25em]  border-pink-500 border-[2px] big:text-lg ">About us &#8594;</button>
+              </div>
+              
+             </div>
+  
+             <img src="./Photos/bg-less-posing.png" alt="" class=" object-contain w-[60%] medium:w-[60%] sub-med:hidden ">
+             <img src="./photos/posing-bg-w-background.jpg" alt="" class="hidden sub-med:flex">
+           </div>
+         
+        </section>
+
+        <section id="aboutus" class="w-[90%] mx-auto mb-[6em]">
+          <h1 class=" text-5xl w-[40%] mx-auto italic  text-white bg-[#1B83FF] text-center sub-med:w-[50%]  mb-5 small:text-3xl ">What we offer</h1>
+          <div class="offer-container flex justify-center gap-7 medium:flex-col medium:items-center">
+            <div class="offer1 text-center w-[20%] mshadow  p-2 medium:w-[50%] sub-med:w-[70%] small:w-[100%] max-w-[300px]" >
+              <img src="./photos/free-shipping.jpg" alt="" class="w-[50%] mx-auto ">
+              <p class="text-3xl"> <h2 class="text-2xl text-[#1B83FF]">Free Shipping</h2>
+                free shipping on all orders over 200$ and a 10% discount on shipping fees for orders over 150$
+              </p>
+            </div>
+            <div class="offer2 text-center w-[20%] mshadow p-2 medium:w-[50%] sub-med:w-[70%] small:w-[100%] max-w-[300px]">
+              <img src="./photos/30 day returns.png" alt="" class="w-[50%]  mx-auto">
+              <p class="text-3xl"> <h2 class="text-2xl text-[#1B83FF]">30 Day Returns</h2>
+                30 day returns on all items received damaged or was damaged in transit
+              </p>
+            </div>
+            <div class="offer3 text-center w-[20%] mshadow  p-2 medium:w-[50%] sub-med:w-[70%] small:w-[100%] max-w-[300px]">
+              <img src="./photos/giftcard.webp" alt="" class="w-[50%]  mx-auto">
+              <p class="text-3xl"> <h2 class="text-2xl text-[#1B83FF]">Gift Cards</h2>
+               Receive royalty free Store gift cards valued at 25$ and up on selected purchases
+              </p>
+            </div>
+            <div class="offer4 text-center w-[20%] mshadow  p-2 medium:w-[50%] sub-med:w-[70%] small:w-[100%] max-w-[300px]">
+              <img src="./photos/paper-plane.png" alt="" class="w-[50%] mx-auto">
+              <p class="text-3xl"> <h2 class="text-2xl text-[#1B83FF]">Contact Us</h2>
+              To find out more info about KenFash, Click the link <a href="#">here</a> to contact us.
+               </p>
+            </div>
+          </div>
+        </section>
+        
+      <section id="store-section" class=" min-h-screen   w-[90%] mx-auto relative sub-med:w-[100%] ">
+
+        <h1 class="text-5xl w-[40%]  mx-auto  text-white bg-[#1B83FF] text-center sub-med:w-[50%]">STORE</h1>
+        
+        <article class='banner-section w-[100%] relative  -med:w-[100%] '  >
+          <div class="rightarrow absolute z-10  right-[20%] top-[46%] text-3xl medium:right-[0px] text-[#1b83ff]"><i class="fa-solid fa-arrow-right"></i></div>
+         
+          <div class="leftarrow absolute z-10  left-[20%] top-[46%] text-3xl medium:left-[0px] text-[#1b83ff]"><i class="fa-solid fa-arrow-left"></i></div>
+
+          <div class="img-wrappers banner-section w-[60%] relative mx-auto whitespace-nowrap mt-5  overflow-x-auto scrollbar1 snap-x snap-mandatory scrollbar medium:w-[100%]" >
+          
+            <img src="./photos/fashion-banner-2.jpg" alt="" class="w-[100%] inline-block  sub-med:w-[100%] aspect-[2/1] snap-start snap-always  " >
+          <img src="./photos/Top-Banner-Tistabene,-Javinishka-Msite---24feb2mensclpe.jpg" alt="" class="w-[100%] inline-block sub-med:w-[100%] aspect-[2/1 snap-start">
+          <img src="./photos/Stop-Msite_87469487_djggjdjdjjwiwi.jpg" alt="" class="w-[100%] inline-block sub-med:w-[100%] aspect-[2/1] snap-start">
+          <img src="./photos/mens-banner2.jpg" alt="" class="w-[100%] sub-med:w-[100%] inline-block aspect-[2/1] snap-start">
+          <img src="./photos/shoes-banner.webp" alt="" class="w-[100%] sub-med:w-[100%] inline-block aspect-[2/1] snap-start">
+          <img src="./photos/Shoes-banner2.webp" alt="" class="w-[100%] sub-med:w-[100%] inline-block aspect-[2/1] snap-start">
+           
+        </div>
+          <!-- <img src="./photos/Stop-Msite_87469487_djggjdjdjjwiwi.jpg" alt="" class="w-[50%] mx-auto sub-med:w-[100%] aspect-[2/1]"> -->
+          
+        </article>
+
+        <div class="relative containitems">
+          <div class="relative bg-[#1B83FF] w-[100%] h-[50px] flex">
+
+            <div class=" relative z-10"  data-="data-dropdown" >
+              <i class="fa-solid fa-filter  text-2xl mt-3 cursor-pointer focus:text-white" data-="dropdown-btn" id="dropdown"> <span id="dropdown-inner" class="text-[0.5em] text-white ">filter</span></i>
+            <ul id="dropdown-menu" class="w-[180px] gap-4 items-center  absolute top-[calc(100% + 0.25rem)] left-2 bg-[#1B83FF] text-white mshadow p-4 rounded-md inactive trans">
+              <li class="text-lg dropdown-item hover:border-b-4 border-b-white">All <i class="fa-solid fa-person-half-dress"></i> </li>
+              <li class="text-lg dropdown-item hover:border-b-4 border-b-white">Footwear <i class="fa-solid fa-shoe-prints"></i></li>
+              <li class="text-lg dropdown-item hover:border-b-4 border-b-white">Men<i class="fa-solid fa-person ml-2"></i></li>
+              <li class="text-lg dropdown-item hover:border-b-4 border-b-white">Women <i class="fa-solid fa-person-dress "></i></li>
+            </ul>
+            </div>
+            
+            <i class="fa-solid fa-cart-shopping absolute right-0 top-0 text-white text-3xl cursor-pointer">
+                <span class='bg-blue-400 text-black rounded text-lg absolute right-0 top-[-10px] h-6' id="cart-amount">0</span>
+            </i>
+          </div>
+         
+            <hr class="bg-black border-cyan-500 border-2">
+  
+         <div class="my-cart  mx-auto grid  mygrid  big:grid-cols-4 medium:grid-cols-3 sub-med:grid-cols-2 small:grid-cols-1 relative "  >
+           
+          <div class="NotLoggedinOverLay absolute z-20 bg-[rgba(0,0,0,0.4)]  h-[100%] w-[100%] text-[#f5f5f5]  justify-center items-center text-center hidden sub-med:items-start ">
+              <div class="alert sub-med:mt-[5em]"><p class="text-3xl">Login In Order to Browse and Add Products to Cart</p> 
+                <button class="loginBtn bg-[#1B83FF] px-[2em] py-[0.35em] rounded-lg text-xl w-[auto] mx-auto"> Login</button>
+              </div>
+            </div>
+
+            <div class="cartitem w-[180px] min-w-[120px] rounded-md mx-auto shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col small:mx-auto sub-med:mx-auto" name="Footwear" data-gender="men">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">40% off</div>
+              <img src="./photos/foams.jpg" alt="" title="click to view description" class="h-32 productImage" data-Sku="1">
+               <p class="text-xl text-center mt-[1em]">Street foams</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$89</p>
+               </div>
+              <button class="bg-[#1B83FF] w-[80%] rounded-md mx-auto text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+  
+            <div class="cartitem w-[180px]  min-w-[120px] rounded-md mx-auto  shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col small:mx-auto sub-med:mx-auto" name="Footwear" data-gender="men">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">20% off</div>
+              <img src="./photos/foams-brown.webp" alt="" title="click to view description" class="h-32 productImage" data-Sku="2">
+               <p class="text-xl text-center mt-[1em]  ">Brown foams</p>
+    
+               <div class="info-container text-center mx-auto flex ">
+                <!-- <button class="bg-black w-9 text-white">+</button>
+                   <input type="number" class="text-2xl w-10 placeholder:0" >
+                <button class="bg-black w-9 text-white">-</button> -->
+                <p class="text-2xl text-center mr-4 text-[#1B83FF]">$92</p>
+               </div>
+              <button class="bg-[#1B83FF] w-[80%] mx-auto rounded-md text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+    
+            <div class="cartitem w-[180px] min-w-[120px] rounded-md mx-auto  shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col small:mx-auto" name="Footwear" data-gender="men">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">35% off</div>
+              <img src="./photos/yeezy.jpg" alt="" title="click to view description" class="h-32 object-contain productImage" data-Sku="3">
+               <p class="text-xl text-center mt-[1em]">yeezy foams</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$72</p>
+               </div>
+              <button class="bg-[#1B83FF]  w-[80%] rounded-md  text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+  
+            <div class="cartitem w-[180px] min-w-[120px] rounded-md mx-auto  shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col small:mx-auto" name="Footwear" data-gender="men">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">0% off</div>
+              <img src="./photos/Nike-Air-Force-1.webp" alt="" title="click to view description" class="h-32 object-contain productImage" data-Sku="4">
+               <p class="text-xl text-center mt-[1em]">AF1 white</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$94</p>
+               </div>
+              <button class="bg-[#1B83FF]  w-[80%] rounded-md  text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+  
+            <div class="cartitem w-[180px] min-w-[60px] rounded-md mx-auto  shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col" name="Footwear" data-gender="men">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">15% off</div>
+              <img src="./photos/Nike-Air-Force-black.webp" alt="" title="click to view description" class="h-32 object-contain productImage" data-Sku="5">
+               <p class="text-xl text-center mt-[1em]">AF1 black</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$94</p>
+               </div>
+              <button class="bg-[#1B83FF]  w-[80%] rounded-md secondshadow text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+    
+            <div class="cartitem w-[180px] min-w-[60px] rounded-md mx-auto  shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col" name="Footwear" data-gender="men">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">5% off</div>
+              <img src="./photos/Nike-slides.webp" alt="" title="click to view description" class="h-32 object-contain productImage" data-Sku="6">
+               <p class="text-xl text-center mt-[1em]">Nike slides</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$60</p>
+               </div>
+              <button class="bg-[#1B83FF]  w-[80%] rounded-md  text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+    
+            <div class="cartitem w-[180px] min-w-[60px] rounded-md mx-auto shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col" name="Footwear" data-gender="men">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">50% off</div>
+              <img src="./photos/Air-Jordan-1.webp" alt="" title="click to view description" class="h-32 object-contain productImage" data-Sku="7">
+               <p class="text-xl text-center mt-[1em]">Air jordan 1</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$94</p>
+               </div>
+              <button class="bg-[#1B83FF]  w-[80%] rounded-md  text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+
+          
+            <div class="cartitem w-[180px] min-w-[60px] rounded-md mx-auto shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col" name="men" data-gender="men">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">0% off</div>
+              <img src="./photos/polo-shirt-blue_.jpg" alt="" title="click to view description" class="h-32 object-contain productImage" data-Sku="8">
+               <p class="text-xl text-center mt-[1em]">Polo Shirt Blue</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$22</p>
+               </div>
+              <button class="bg-[#1B83FF]  w-[80%] rounded-md  text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+
+            <div class="cartitem w-[180px] min-w-[60px] rounded-md mx-auto shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col" name="men" data-gender="men">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">10% off</div>
+              <img src="./photos/v-necks_.jpg" alt="" title="click to view description" class="h-32 object-contain productImage" data-Sku="9">
+               <p class="text-xl text-center mt-[1em]">V neck Tshirt</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$16</p>
+               </div>
+              <button class="bg-[#1B83FF]  w-[80%] rounded-md  text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+
+            <div class="cartitem w-[180px] min-w-[60px] rounded-md mx-auto shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col" name="men" data-gender="men">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">0% off</div>
+              <img src="./photos/button-up-men.jpg" alt="" title="click to view description" class="h-32 object-contain productImage" data-Sku="10">
+               <p class="text-xl text-center mt-[1em]"> buttonup Shirt</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$26</p>
+               </div>
+              <button class="bg-[#1B83FF]  w-[80%] rounded-md  text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+    
+            <div class="cartitem w-[180px] min-w-[60px] rounded-md mx-auto shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col" name="men" data-gender="women">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">20% off</div>
+              <img src="./photos/floral-women.jpg" alt="" title="click to view description" class="h-32 object-contain productImage" data-Sku="11">
+               <p class="text-xl text-center mt-[1em]"> floral Shirt</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$15</p>
+               </div>
+              <button class="bg-[#1B83FF]  w-[80%] rounded-md  text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+
+            <div class="cartitem w-[180px] min-w-[60px] rounded-md mx-auto shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col" name="men" data-gender="women">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">0% off</div>
+              <img src="./photos/womens-v-neck.jpg" alt="" title="click to view description" class="h-32 object-contain productImage" data-Sku="12">
+               <p class="text-xl text-center mt-[1em]">Women Vneck</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$18</p>
+               </div>
+              <button class="bg-[#1B83FF]  w-[80%] rounded-md  text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+
+            <div class="cartitem w-[180px] min-w-[60px] rounded-md mx-auto shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col" name="Footwear" data-gender="women">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">5% off</div>
+              <img src="./photos/women-heels.jpg" alt="" title="click to view description" class="h-32 object-contain productImage" data-Sku="13">
+               <p class="text-xl text-center mt-[1em]">Women Heels</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$54</p>
+               </div>
+              <button class="bg-[#1B83FF]  w-[80%] rounded-md  text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+
+            <div class="cartitem w-[180px] min-w-[60px] rounded-md mx-auto shadow-sky-300 mshadow mt-3 p-[1em] relative flex flex-col" name="Footwear" data-gender="women">
+              <div class="offsale absolute bg-[#1b83ff] text-[#f5f5f5] p-1 right-0 rounded-l-md">5% off</div>
+              <img src="./photos/womens-skechers.jpg" alt="" title="click to view description" class="h-32 object-contain productImage" data-Sku="14">
+               <p class="text-xl text-center mt-[1em]">skechers</p>
+    
+               <div class="info-container flex mx-auto">
+                
+                <p class="text-2xl text-end mr-4 text-[#1B83FF]">$38</p>
+               </div>
+              <button class="bg-[#1B83FF]  w-[80%] rounded-md  text-white mt-[0.5em] addItem self-center p-2" id="AddtoCartBtn">Add to cart</button>
+            </div>
+    
+         </div>
+    
+         <div class="cart-slider-container bg-[rgba(36,35,35,0.8)] h-[100%] absolute w-[100%] right-0 top-0  hidden overflow-scroll toggleOut" id="Cart-outer-container">
+          <div class="cart-slider bg-white  min-h-screen absolute shadow-2xl right-0 w-[25%] min-w-[320px] toggleOut"  >
+           <div class="absolute right-0 text-3xl cursor-pointer toggleOut" id="exit-cart">&#10005;</div> 
+           <h1 class="text-black text-3xl border-y-4 toggleOut">Your Cart</h1>
+           <span class="text-2xl displaytotal toggleOut">total:$0</span>
+           <ul class="w-[60%] mx-auto toggleOut" id='sideBarList'>
+             
+           </ul>
+          </div>
+         </div>
+        </section>
+
+        <section class="AboutUs bg-[#1b83ff]" id="About-us" >
+          <h1 class="text-5xl text-center text-[#f2f5f5] mt-5">About Us</h1>
+        <article class='AboutUsSubsection w-[90%] mx-auto bg-[#f2f5f5] rounded-md flex flex-col justify-center rounded-t-2xl sub-med:w-[100%]'>
+          
+          <div class="first-section flex items-center h-[auto] justify-center  w-[100%] medium:flex-col">
+
+            <div class="outerwrapper w-[100%]  z-10   p-2 medium:order-2  flex flex-col medium:items-center">
+              <figure class="my-12 text-center max-w-[600px] ">
+                <blockquote class="bg-[#1b83ff]  pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl small:text-lg text-left mt-2 text-white  before:content-['\201C']
+                    before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white
+                     before:opacity before:transform before:translate-x-2 before:translate-y-2 
+                      after:content-['\201D']
+                     after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white
+                      after:opacity after:transform after:-translate-y-2 after:-sm:translate-x-2">
+                    Kenfash has always been there for me.It was an amazing experience
+                    partnering with them to promote my small business.
+                    </p>
+              
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-xl text-right mt-4 text-[#1e61b4] ">
+                    &#8212;Mark Zuckerburg
+                </figcaption>
+    
+            </figure>
+
+            <div class="text-info w-[100%] bg-white  z-10 secondshadow medium:self-center self-end p-2 rounded-lg max-w-[600px] ">
+
+              <h1 class="text-3xl bg-[#1b83ff] text-[#f2f5f5] text-center">Humble beginnings</h1>
+              <p class="text-center">Kenfash is an online eccommerce platform that buys retail products and resells them at a reasonable price
+                founded by the current C.E.O Keneil Watson,but how did this all start? For that we would have to go back to 2011,
+                when Kenfash went by the name 'Ken's retail' running out of a small garage thrifting
+                used products until we eventually went mainstream when we started shipping 
+                abroad to selected locations,made an online shopping website and rebranded to selling retail items from
+                different distributors and renamed the company to KenFash
+            </p>
+             </div>
+
+            </div>
+           
+           <div class="imageholder w-[100%]  z-1 medium:order-1 medium:max-w-[600px]" >
+            <img src="./photos/unsplash-backshot-women.jpg" alt="" class="w-[100%] ">
+           </div>
+
+          </div>
+
+          <div class="second-section flex items-center h-[auto] justify-center  w-[100%] medium:flex-col">
+            <div class="imageholder w-[100%]  z-1 medium:order-1 medium:max-w-[600px]">
+              <img src="./photos/unsplash-backshot-men.jpg" alt="" class="w-[100%] ">
+             </div>
+
+            <div class="outerwrapper w-[100%]  z-10   p-2 medium:order-2  flex flex-col">
+              
+              <figure class="my-12 text-center max-w-[600px] medium:self-center">
+                <blockquote class="bg-[#1b83ff]  pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl small:text-lg text-left mt-2 text-white  before:content-['\201C']
+                    before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white
+                     before:opacity before:transform before:translate-x-2 before:translate-y-2 
+                      after:content-['\201D']
+                     after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white
+                      after:opacity after:transform after:-translate-y-2 after:-sm:translate-x-2">
+                    This is one of the best online stores I've ever shopped at. 
+                    Everything is high quality and also affordable on a tight budget
+                    </p>
+              
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-4 text-[#1e61b4] ">
+                    &#8212;Guy Richie
+                </figcaption>
+    
+            </figure>
+
+            <div class="text-info w-[100%] bg-white  z-10 secondshadow medium:self-center self-end p-2 rounded-lg max-w-[600px]">
+
+              <h1 class="text-3xl bg-[#1b83ff] text-[#f2f5f5] text-center">Rise to Prominence</h1>
+              <p class="text-center">
+                After about a year of selling online our business started to gain traction to the likes
+                 of shein and temu and major clothing and footwear brands began
+                  to take notice and we signed partnership contracts with many of them such as the ones listed below:
+                  <div class="companycont text-center flex gap-2 justify-center">
+                    
+                      <img src="./photos/ralph-lauren-1.svg" alt="" class="w-[100px] clip-path   border-4">
+                    
+                   
+                    <img src="./photos/nike-8.svg" alt="" class="w-[100px] clip-path ">
+
+                    <img src="./photos/prada-logo-1.svg" alt="" class="w-[100px] clip-path ">
+                  </div> <br>
+                 <p class="text-center">
+                  We began buying storage warehouses and hiring packaging employees
+                  and before we knew it we had become one of the biggest
+                  clothing businesses in the country even making it to the new york times.
+                 </p>
+            </p>
+             </div>
+
+            </div>
+           
+           
+
+          </div>
+
+          <div class="third-section flex items-center h-[auto] justify-center  w-[100%] medium:flex-col">
+
+            <div class="outerwrapper w-[100%]  z-10   p-2 medium:order-2  flex flex-col">
+              <figure class="my-12 text-center max-w-[600px] medium:self-center">
+                <blockquote class="bg-[#1b83ff]  pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl small:text-lg text-left mt-2 text-white  before:content-['\201C']
+                    before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white
+                     before:opacity before:transform before:translate-x-2 before:translate-y-2 
+                      after:content-['\201D']
+                     after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white
+                      after:opacity after:transform after:-translate-y-2 after:-sm:translate-x-2">
+                    Kenfash is the ideal place to Shop for all your clothing needs, I can't reccommend it enough!
+                    </p>
+              
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-4 text-[#1e61b4] ">
+                    &#8212;Ana de Armas
+                </figcaption>
+    
+            </figure>
+
+            <div class="text-info w-[100%] bg-white  z-10 secondshadow medium:self-center self-end p-2 rounded-lg max-w-[600px]">
+
+              <h1 class="text-3xl bg-[#1b83ff] text-[#f2f5f5] text-center">Company Goals</h1>
+              <p class="text-center">
+                From the inception of this company our goal has always been one thing, to provide
+                the best quality products at an affordable price for people of all walks 
+                of life and that has not changed. we wish to expand our team and
+                 our reach to more countries no matter how far. Just as the Ceo of our company said 'In order to grow 
+                 we must first sow'.Do you want to grow with us and make this dream a reality? <br>
+                 <button class="bg-[#1b83ff] text-white px-2 py-2 rounded-md mt-2 buttonshadow">Join our team</button>
+            </p>
+             </div>
+
+            </div>
+           
+           <div class="imageholder w-[100%]  z-1 medium:order-1 medium:max-w-[600px]">
+            <img src="./photos/companygoals2.jpg" alt="" class="w-[100%] ">
+           </div>
+
+          </div>
+
+          
+        </article>
+        </section>
+
+
+        <section class="contactUs mt-3 mb-3" id="Contact-us">
+          <h1 class="text-[#1e61b4] text-5xl text-center ">Contact Us</h1>
+
+          <form action=""  class="Contactform flex flex-col items-center  ">
+            <div class="name-wrapper w-[30%] medium:w-[50%] small:w-[90%]">
+                <!-- <label for="namefield" class="formlabel self-start">Name</label> <br> -->
+                <input type="text" class="namefield border-[3px] outline-none  border-[#1b83ff] border-x-0 border-t-0 w-[100%] p-3 rounded-md" placeholder="Name"> <br>
+            </div>
+          
+         <div class="email-wrapper w-[30%] medium:w-[50%] small:w-[90%]">
+            <!-- <label for="emailfield" class="formlabel">Email</label> <br> -->
+         <input type="email" class="emailfield border-[3px] outline-none  border-[#1b83ff] border-x-0 border-t-0 w-[100%] p-3 rounded-md" placeholder="Email" required> <br>
+         </div>
+         
+         <div class="message-wrapper w-[30%] medium:w-[50%] small:w-[90%]">
+            <!-- <label for="messagefield" class="formlabel">Message</label> <br> -->
+            <textarea class="messagefield border-[3px] outline-none  border-[#1b83ff] border-x-0 border-t-0 w-[100%] p-3 rounded-md" id="" cols="50" rows="10" placeholder="Message"></textarea> <br>
+         </div>
+    
+         
+         <button class="SendFormBtn bg-[#1e61b4] text-[#f2f5f5] px-5 py-2 rounded-md buttonshadow">Send</button>
+        
+         </form>
+        </section>
+        </main>
+      
+        <footer class="bg-[#1e61b4] text-white text-lg sm:text-xl w-full rounded-t-md poppins" id="footer">
+          <section class="max-w-5xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <div class="logo flex flex-col gap-2 small:items-center small:text-center">
+              <a href='#hero' class="flex gap-2">
+                <img src="../Photos/arrowhead.png" alt="" class="w-8 rounded-xl">
+            <span class="text-white text-2xl whitespace-nowrap font-bold">KenFash</span>
+            
+            </a>
+            <div class="help justify-self-center small:text-center">
+              <p class="mb-2">FAQ</p>
+              <p class="mb-2">shipping</p>
+              <p class="mb-2">Order status</p>
+              <p>Support</p>
+            </div>
+           
+            </div>
+              <address>
+                <h1 class="border-b-2 w-[50px] text-xl">Address</h1>
+                  <h2>Kenfash Products,Inc.</h2>
+                  555 Conroy Way<br>
+                  Fairfield,New Jersey 12345-5555<br>
+                  Email:<a href="mailto:keneilwatson0@gmail.com" class="hover:opacity-70">Inquires@Kenfash.com</a><br>
+                  Phone: <a href="tel:18762956906" class="hover:opacity-70">(555) 555-5555</a>
+              </address>
+              <nav class="hidden md:flex flex-col gap-2 " aria-label='footer'>
+                <h1 class="border-b-2 w-[50px] text-xl">Navigation</h1>
+                  <a href="#store-section" class="opacity-90">Store</a>
+                  <a href="#AboutUs" class="opacity-90">About us</a>
+                  <a href="" class="opacity-90 loginBtn" id="loginId">Login</a>
+                  <a href="" class="w-full  py-6 hover:opacity-90  text-center" id="signOutId">
+                    Logout
+                 </a>
+              </nav>
+  
+            
+          </section>
+          <div class="logos text-center">
+            <i class="fa-brands fa-facebook text-[1.5em]"></i>
+            <i class="fa-brands fa-instagram text-[1.5em]"></i>
+            <i class="fa-brands fa-twitter text-[1.5em]"></i>
+          </div>
+          <div class="flex flex-col sm: bg-white text-[#1e61b4]">
+            <p class="text-center">Copyright Kenfash &copy; <span id="year">2023</span></p>
+            <p class="text-center">All Rights Reserved</p>
+        </div>
+      </footer>
+       
+        </div>
+        
+       
+        
+</body>
+<script type="module">
+//  import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js'
+//  import { getAuth } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js'
+//  const firebaseConfig = {
+//     apiKey: "AIzaSyCCtAjNFy9jAveiGZntf6LZ-GIQpv1_aUM",
+//     authDomain: "kencart-66d08.firebaseapp.com",
+//     projectId: "kencart-66d08",
+//     storageBucket: "kencart-66d08.appspot.com",
+//     messagingSenderId: "421970548257",
+//     appId: "1:421970548257:web:e8c1d9493bcfc9955bb560",
+//     measurementId: "G-23YP77J94Q"
+//   };
+//   const app = initializeApp(firebaseConfig);
+  
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script src="../public/js/cart-slider.js" type="module" defer></script>
+</html>

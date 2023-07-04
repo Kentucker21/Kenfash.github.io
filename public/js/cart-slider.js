@@ -350,7 +350,7 @@ let emailField=document.querySelector('.emailfield')
   Email.send({
       Host : "smtp.elasticemail.com",
       Username : "keneilwatson0@gmail.com",
-      Password : "5FF25B88EB229BF54F5CAF4D3586E3DC5CF8",
+      Password : "D979CE0D22BC694FCA65F010915F67C45FF4",
       To : 'keneilwatson0@gmail.com',
       From : emailField.value,
       Subject : "Portfolio feedback",

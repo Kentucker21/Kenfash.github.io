@@ -341,7 +341,8 @@ let submitFormBtn=document.querySelector('.SendFormBtn')
   submitFormBtn.addEventListener('click',
     SendEmail)
 
-function SendEmail(){
+function SendEmail(e){
+  e.preventDefault()
   let nameField=document.querySelector('.namefield')
 let messageField=document.querySelector('.messagefield')
 let emailField=document.querySelector('.emailfield')
